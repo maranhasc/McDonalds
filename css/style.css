@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+}
+*::-webkit-scrollbar {
+    display: none;
+}
+body {
+    margin: 0;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+.rowcv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+.row-around {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header nav ul, header nav li {
+    padding: 0;
+    margin: 0;
+}
+header nav li {
+    list-style-type: none;
+    float: left;
+    position: relative;
+    margin-left: 20px;
+}
+header nav li:hover {
+    border-top: solid 4px #ffbc0f;
+}
+header nav li:hover li {
+    border-top: none;
+}
+header nav li li:hover {
+    background-color: #ffbc0f;
+}
+header nav li li {
+    border-radius: 6px;
+    margin-left: 0;
+    padding: 10px;
+    width: 240px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-bottom: solid 1px gainsboro;
+}
+header nav li li img{
+    margin-right: 10px;
+}
+header nav ul ul {
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 240px;
+    height: 400px;
+    overflow-y: scroll;
+    padding-top: 16px;
+    z-index: 3;
+}
+
+header nav ul li:hover ul {
+    display: block;
+}
+.grande {
+    background-image: url(../img/grande.jpg);
+    height: 560px;
+    background-size: cover;
+}
+.btn-naranja {
+    background-color: #ffbc0f;
+    border: 0;
+    padding: 4px 18px;
+    border-radius: 3px;
+    font-size: 16px;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.d-flex-v {
+    display: flex;
+    align-items: center;
+}
+.col-2 {
+    display: flex;
+    width: 47%;
+}
+.col-3 {
+    width: 31%;
+}
+.card {
+    border-radius: 16px;
+    box-shadow: 0 0 20px gainsboro;
+    text-align: center;
+    position: relative;
+    padding-bottom: 40px;
+    align-items: stretch;
+}
+.card img {
+    width: 100%;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+.mt-20 {
+    margin-top: 20px;
+}
+.bg-naranja {
+    background-color: #ffbc0f;
+}
+.pt-10 {
+    padding: 10px;
+}
+.btn {
+    border: none;
+    padding: 6px 18px;
+    font-size: 16px;
+    border-radius: 4px;
+}
+.btn-naranja {
+    background-color: #ffbc0f;
+}
+.card button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
